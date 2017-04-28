@@ -43,6 +43,7 @@ function listPage(u){
         nextpage = pagedata.nextpage;
         allurl = pagedata.arr;
         allpaage = pagedata.all_number;
+
         console.log("----------打开电影详情获取-----------");
         n = 0;
 

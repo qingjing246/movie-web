@@ -11,7 +11,7 @@ var insertData = function (db, callback) {
     var collectioninfo = db.collection("database");
 
     //插入信息
-    var headData = [{
+    var Data = [{
         name: a[0],
         time: a[1],
         adder: a[2],
@@ -22,11 +22,13 @@ var insertData = function (db, callback) {
         plot:a[7],
         id:a[8]
     }];
-    collectioninfo.insert(headData, function (err, result) {
+    collectioninfo.insert(Data, function (err, result) {
         callback(result);
 
     })
 };
+
+
 Mongoclient.connect(DB_url,function(err,db){
     console.log('连接成功');
     insertData(db,function(result){
