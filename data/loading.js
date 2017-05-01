@@ -2,12 +2,12 @@
 var page = require('webpage').create();
 var execFile = require('child_process').execFile;
 var n = 0;
-var id= 5832;
-var url = 'http://www.idyjy.com/w.asp?p=304&f=3&l=s';
+var id= 0;
+var url = 'http://www.idyjy.com/w.asp?p=1&f=3&l=s';
 var allurl;
 var allpaage;
 var nextpage;
-var numberpage = 308;
+var numberpage = 0;
 
 
 phantom.outputEncodings = 'utf-8';
@@ -62,6 +62,7 @@ function page_info(page_url){
             var stars = [];
             var updatahref = [];
 
+            var imgUrl = document.getElementsByClassName('pic')[0].querySelector('img').src;	
             var name = document.getElementById('name').innerText;
             var u = document.getElementsByClassName('down_part_name');
             var b =document.getElementsByClassName('info')[0].getElementsByTagName('li')[0].childNodes;
@@ -87,7 +88,7 @@ function page_info(page_url){
                 stars.push(star[j].innerText)
             }
 
-            data = [name,b[1].data.replace(/\s/g,""),b[3].data,updatahref,type,director,stars,plot];
+            data = [name,b[1].data.replace(/\s/g,""),b[3].data,updatahref,type,director,stars,plot,imgUrl];
             return data;
         });
         console.log('-----------------------------第'+numberpage+'页----------------------+');

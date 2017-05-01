@@ -20,7 +20,9 @@ var insertData = function (db, callback) {
         director:a[5],
         stars:a[6],
         plot:a[7],
-        id:a[8]
+        img:a[8],
+        id:a[9],
+        datatype:'movie'
     }];
     collectioninfo.insert(Data, function (err, result) {
         callback(result);

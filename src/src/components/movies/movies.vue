@@ -1,24 +1,40 @@
-
 <template>
-<div>
-  电影列表
-  <button @click="butn()">点击</button>
-</div>
+  <div>
+    电影列表
+    <button @click="btn(123)">点击{{ getname }}</button>
+    <p>{{ searchinfo.name }}</p>
+  </div>
 </template>
 <script type="text/ecmascript-6">
   import {mapGetters} from 'vuex'
+  import {mapActions} from 'vuex'
+  import {mapState} from 'vuex'
+  import {mapMutations} from 'vuex'
 
- export default {
-    props:['movies']
-    ,
-   created(){
 
-   },
-   computed:{
-     ...mapGetters(['audio'])
-   },
+  export default {
+    data (){
+      return {
+        a: "123",
+        b: ""
+      }
+    },
+    computed: {
+      ...mapMutations(['change']),
+      ...mapState(['searchinfo']),
+      ...mapGetters(['getname'])
+  },
+  created()
+  {
 
- }
+
+  }
+  ,
+  methods:{
+  ...mapActions(['btn']),
+  }
+
+  }
 
 
 </script>

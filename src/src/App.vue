@@ -1,22 +1,25 @@
 <template>
   <div id="app">
+
     <div class="header">
       <!--导航栏-->
       <div class="nav-box">
         <ul class="nav">
-          <router-link class="nav-list" tag="li"  to="/"  ><a href="">首页</a></router-link>
-          <router-link class="nav-list" tag="li"  to="/api/movies" @click.native="dianying()" ><a href="">电影</a></router-link>
-          <router-link class="nav-list" tag="li"  to="/api/tv" @click.native="tv()" ><a href="">电视剧</a></router-link>
-          <router-link class="nav-list" tag="li"  to="/api/donghua" @click.native="donghua()" ><a href="">动画片</a></router-link>
+          <router-link class="nav-list" tag="li" to="/"><a href="">首页</a></router-link>
+          <router-link class="nav-list" tag="li" to="/api/movies" @click.native="dianying()"><a href="">电影</a>
+          </router-link>
+          <router-link class="nav-list" tag="li" to="/api/tv" @click.native="tv()"><a href="">电视剧</a></router-link>
+          <router-link class="nav-list" tag="li" to="/api/donghua" @click.native="donghua()"><a href="">动画片</a>
+          </router-link>
         </ul>
       </div>
       <!--搜索栏-->
       <div class="search">
         <form class="clearflex form-wrapper" id="form-wrapper">
 
-          <input id="value" type="text"  placeholder="">
+          <input id="value" type="text" v-model="name" :placeholder="placeholder" >
 
-          <button id="submit" type="submit" @click="">搜索</button>
+          <button id="" type="submit" @click="start(submit(name))">搜索</button>
 
         </form>
       </div>
@@ -27,78 +30,104 @@
     </router-view>
 
 
+    <!--<img src="./assets/logo.png">-->
+    <router-view></router-view>
+
   </div>
 </template>
 
 <script>
+  import {mapActions} from 'vuex'
+
   export default {
     data (){
-      return{
-          movies:{
-          }
+      return {
+        movies: {},
+        name: "",
+        placeholder:"请输入名字"
       }
     },
-   created (){
+    computed: {
 
     },
-    methods:{
-      dianying:function (){
+
+    created (){
+
+    },
+    methods: {
+      ...mapActions(['submit']),
+      start:function(){
+        if(this.name ===""){
+         this.placeholder ="不能为空";
+        }else{
+          this.$router.push({ path:"/api/movies"});
+          this.name = "";
+        }
+
+
+      },
+
+      dianying: function () {
         this.$http.get('/api/movies').then((response) => {
           response = response.body;
-          if(response.errno === 0){
+          if (response.errno === 0) {
+
             this.movies = Object.assign({}, this.movies, response.data);
             console.log(this.movies);
           }
         })
 
       },
-      tv: function (){
+      tv: function () {
         this.$http.get('/api/movies').then((response) => {
           response = response.body;
-          if(response.errno === 0){
+          if (response.errno === 0) {
             this.oumei = response.data;
             console.log(this.oumei);
           }
         })
       },
-      donghua: function (){
+      donghua: function () {
         this.$http.get('/api/movies').then((response) => {
           response = response.body;
-          if(response.errno === 0){
+          if (response.errno === 0) {
             this.oumei = response.data;
             console.log(this.oumei);
           }
         })
 
 
-      }
+      },
+
     },
 
-    components:{
-
-    }
+    components: {}
 
   }
 </script>
 
 <style lang="less" rel="stylesheet/less">
-  #app{
+  #app {
     width: 1000px;
     margin: 0 auto;
   }
-  body,ul,p,hr{
+
+  body, ul, p, hr {
     margin: 0;
     padding: 0;
   }
-  a{
-    text-decoration:none;
-    font-style:normal;
+
+  a {
+    text-decoration: none;
+    font-style: normal;
   }
-  li{
-    list-style:none;
+
+  li {
+    list-style: none;
   }
-  .clearflex:after{
-    content:"";
+
+  .clearflex:after {
+    content: "";
     clear: both;
     display: table;
   }
@@ -136,55 +165,55 @@
     width: 1000px;
     margin: 0 auto;
     text-align: center;
-  //导航
+    //导航
     .nav-box {
       background: rgba(169, 169, 169, 0.13);
     }
-  .nav {
-    display: inline-block;
+    .nav {
+      display: inline-block;
 
-  }
-  .nav-list {
-    display: inline-block;
-  a {
-    padding: 10px;
-    display: inline-block;
-    margin: 0 20px;
-  &:hover {
-     background: red;
-   }
-  }
-  }
-  //搜索栏
+    }
+    .nav-list {
+      display: inline-block;
+      a {
+        padding: 10px;
+        display: inline-block;
+        margin: 0 20px;
+        &:hover {
+          background: red;
+        }
+      }
+    }
+    //搜索栏
     .form-wrapper {
       width: 370px;
       margin: 0 auto;
       height: 40px;
       padding: 10px 0;
-  input {
-    box-sizing: border-box;
-    width: 300px;
-    height: 30px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border: 1px solid #898989;
-    padding: 0 0 0 10px;
-    border-right: none;
-    float: left;
-  &:focus {
-     outline: none;
-   }
-  }
-  button {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-sizing: border-box;
-    width: 70px;
-    height: 30px;
-    border: 1px solid #898989;
-    float: left;
-  }
-  }
+      input {
+        box-sizing: border-box;
+        width: 300px;
+        height: 30px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border: 1px solid #898989;
+        padding: 0 0 0 10px;
+        border-right: none;
+        float: left;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-sizing: border-box;
+        width: 70px;
+        height: 30px;
+        border: 1px solid #898989;
+        float: left;
+      }
+    }
 
   }
 </style>
