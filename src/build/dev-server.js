@@ -22,6 +22,8 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 // https://github.com/chimurai/http-proxy-middleware
 var proxyTable = config.dev.proxyTable
 
+
+// ---------------API-----------------------------
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/movies');
 var db = mongoose.connection;
@@ -31,18 +33,24 @@ var schema = new mongoose.Schema();
 db.movies = db.model("database",schema,"database");
 
 var app = express()
-//var db = require('./mongodb.js');
-var appData = require('../data.json');
-var seller = appData.seller;
-var goods = appData.goods;
-var ratings = appData.ratings;
+
 
 var apiRoutes = express.Router();
 
-apiRoutes.get('/meiguo', function (req, res) {
-	
-	db.movies.find({"adder":/美国/}, null, function (err, info) {
-		
+apiRoutes.get('/movies', function (req,res){
+  db.movies.find({}, null,{sort:{"id":1},limit:10}, function (err, info) {
+    res.json({
+      errno: 0,
+      data: info
+    });
+  });
+});
+
+
+
+apiRoutes.get('/oumei', function (req, res) {
+
+	db.movies.find({"adder":/欧美/}, null,{limit:5}, function (err, info) {
 		res.json({
 		errno: 0,
 		data: info
@@ -50,31 +58,55 @@ apiRoutes.get('/meiguo', function (req, res) {
 	});
 });
 apiRoutes.get('/dalu', function (req, res) {
-	
-	db.movies.find({"adder":/大陆/}, null, function (err, info) {
-		
+
+	db.movies.find({"adder":/大陆/},null,{limit:5}, function (err, info) {
+
 		res.json({
 		errno: 0,
 		data: info
 	});
 	});
 });
-app.use('/api', apiRoutes);
-/*
 
-router.get('/jingang', function (req, res) {
-  db.movies.find({"id": "5883"}, null, function (err, data) {
-    console.log(data);
+apiRoutes.get('/rihan', function (req, res) {
+
+  db.movies.find({"adder":/日/},null,{limit:5}, function (err, info) {
+
     res.json({
-      info: data
-    })
-  })
+      errno: 0,
+      data: info
+    });
+  });
+});
 
-})
+apiRoutes.get('/search', function (req, res) {
+      var qs=new RegExp(req.query.name);
+  db.movies.find({"name":qs},null, function (err, info) {
+    res.json({
+      errno: 0,
+      data: info
+    });
+  });
+});
+
+app.use('/api', apiRoutes);
 
 
-app.use('/jingang', router)
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var compiler = webpack(webpackConfig)
