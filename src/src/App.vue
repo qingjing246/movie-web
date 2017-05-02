@@ -25,10 +25,6 @@
       </div>
     </div>
 
-    <router-view>
-
-    </router-view>
-
 
     <!--<img src="./assets/logo.png">-->
     <router-view></router-view>
@@ -38,6 +34,8 @@
 
 <script>
   import {mapActions} from 'vuex'
+  import {mapMutations} from 'vuex'
+
 
   export default {
     data (){
@@ -48,7 +46,7 @@
       }
     },
     computed: {
-
+      ...mapMutations(['clear']),
     },
 
     created (){
@@ -71,7 +69,6 @@
         this.$http.get('/api/movies').then((response) => {
           response = response.body;
           if (response.errno === 0) {
-
             this.movies = Object.assign({}, this.movies, response.data);
             console.log(this.movies);
           }
