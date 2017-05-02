@@ -4,10 +4,10 @@
     <p></p>
     <ul class="search-list">
       <li v-for="item in searchinfo">
-        <a href="">
-          <img :src=item.img alt="">
+        <router-link tag="a" :to="{ path: '/api/info', query: {id:item.id }}"  >
+          <img :src=item.img  alt="">
           <span>{{ item.name }}</span>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -23,8 +23,6 @@
   export default {
     data (){
       return {
-
-
       }
     },
     computed: {
@@ -35,11 +33,11 @@
   created()
   {
 
-
   }
   ,
   methods:{
   ...mapActions(['btn']),
+
   }
 
   }
@@ -49,10 +47,11 @@
 
 <style lang="less" rel="stylesheet/less">
   .search-list{
+    padding:  20px 0;
     li{
       float: left;
       width: 160px;
-      margin:0 20px;
+      margin:10px 20px;
 
     }
     img{
@@ -68,8 +67,12 @@
 
     }
     span{
+      line-height: 30px;
+      height:30px;
       text-align: center;
       display: block;
+      width: 160px;
+      overflow: hidden;
     }
 
   }

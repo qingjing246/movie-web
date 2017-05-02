@@ -16,17 +16,11 @@
       <!--搜索栏-->
       <div class="search">
         <form class="clearflex form-wrapper" id="form-wrapper">
-
           <input id="value" type="text" v-model="name" :placeholder="placeholder" >
-
-          <button id="" type="submit" @click="start(submit(name))">搜索</button>
-
+          <button id="submit" type="submit" @click="start">搜索</button>
         </form>
       </div>
     </div>
-
-
-    <!--<img src="./assets/logo.png">-->
     <router-view></router-view>
 
   </div>
@@ -35,35 +29,43 @@
 <script>
   import {mapActions} from 'vuex'
   import {mapMutations} from 'vuex'
-
+  import {mapState} from 'vuex'
 
   export default {
     data (){
       return {
         movies: {},
         name: "",
-        placeholder:"请输入名字"
+        placeholder:"请输入片名"
       }
     },
     computed: {
-      ...mapMutations(['clear']),
+      ...mapState(['searchinfo'])
     },
-
     created (){
 
     },
     methods: {
       ...mapActions(['submit']),
       start:function(){
-        if(this.name ===""){
-         this.placeholder ="不能为空";
-        }else{
-          this.$router.push({ path:"/api/movies"});
-          this.name = "";
-        }
+          if( this.name === ""){
+          }else{
+            this.submit(this.name);
 
-
+            if( this.searchinfo.length > 0){
+              this.$router.push({path:"/api/movies"});
+                this.name = "";
+                this.placeholder="请输入片名"
+            }else{
+              this.name = "";
+              this.placeholder = "片名不存在请重新输入";
+            }
+            console.log(this.searchinfo);
+          }
       },
+
+
+
 
       dianying: function () {
         this.$http.get('/api/movies').then((response) => {

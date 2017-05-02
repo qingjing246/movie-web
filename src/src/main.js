@@ -9,7 +9,10 @@ import content from './components/container/content.vue'
 import movies from './components/movies/movies.vue'
 import tv from './components/tv/tv.vue'
 import donghua from './components/donghua/donghua.vue'
+import info from './components/info/info.vue'
 import store from './store'
+
+
 
 Vue.config.productionTip = false;
 Vue.use(vueResource);
@@ -19,15 +22,16 @@ let app = Vue.extend(App);
 
 const router =new VueRouter({
     routes:[
-      {
-      name:'search',
-      path:'/api/search',
-      component:search
-      },
+
       {
         name:'content',
         path:'/',
         component:content
+      },
+      {
+      name:'search',
+      path:'/api/search',
+      component:search
       },
       {
         name:'movies',
@@ -43,6 +47,11 @@ const router =new VueRouter({
         name:'donghua',
         path:'/api/donghua',
         component:donghua
+      },
+      {
+        name:'info',
+        path:'/api/info',
+        component:info
       }
       ]
 

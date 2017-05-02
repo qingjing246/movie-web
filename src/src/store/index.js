@@ -13,12 +13,13 @@ Vue.use(VueRouter)
 
 const store = new Vuex.Store({
   state:{
-    aaa:"222",
+    movie_info:[],
     searchname:'',
-    searchinfo:[]
+    searchinfo:[],
+    placeholder:'请输入片名'
   },
   getters:{
-    getname:store=>store.a
+
   },
   mutations:{
     clear (state){
@@ -27,19 +28,26 @@ const store = new Vuex.Store({
   },
   actions:{
     submit :function ({dispath,state},name){
-      store.commit('clear');
-      if (name === "") {
-      } else {
-        Vue.http.get('/api/search', {params: {name:name}}).then((response) => {
-          response = response.body;
-          if (response.errno === 0) {
-            state.searchinfo = response.data;
-            state.searchname = name;
-          }
-        })
-      }
+      Vue.http.get('/api/search', {params: {name:name}}).then((response) => {
+        response = response.body;
+        if (response.errno === 0) {
+          state.searchinfo = response.data;
+          state.searchname = name;
+        }
+      })
+    },
+    getinfo :function ({dispath,state},id){
+      Vue.http.get('/api/info',{params: {id:id}}).then((response) => {
+       response = response.body;
+       if (response.errno === 0) {
+         state.movie_info =response.data;
+       console.log(state.movie_info[0].updatahref);
+       }
+       })
 
     }
+
+
   }
 
 })
