@@ -51,19 +51,20 @@
           if( this.name === ""){
           }else{
             this.submit(this.name);
-
+             this.$router.push({path:"/api/movies"});
             if( this.searchinfo.length > 0){
-              this.$router.push({path:"/api/movies"});
                 this.name = "";
                 this.placeholder="请输入片名"
             }else{
               this.name = "";
               this.placeholder = "片名不存在请重新输入";
             }
-            console.log(this.searchinfo);
           }
       },
+      a:function (){
 
+
+      },
 
 
 
@@ -82,7 +83,6 @@
           response = response.body;
           if (response.errno === 0) {
             this.oumei = response.data;
-            console.log(this.oumei);
           }
         })
       },
@@ -91,7 +91,6 @@
           response = response.body;
           if (response.errno === 0) {
             this.oumei = response.data;
-            console.log(this.oumei);
           }
         })
 

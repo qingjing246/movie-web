@@ -13,9 +13,11 @@ Vue.use(VueRouter)
 
 const store = new Vuex.Store({
   state:{
-    movie_info:[],
+    movie_info:{},
     searchname:'',
-    searchinfo:[],
+    searchinfo:{
+      type:Object
+    },
     placeholder:'请输入片名'
   },
   getters:{
@@ -40,8 +42,7 @@ const store = new Vuex.Store({
       Vue.http.get('/api/info',{params: {id:id}}).then((response) => {
        response = response.body;
        if (response.errno === 0) {
-         state.movie_info =response.data;
-       console.log(state.movie_info[0].updatahref);
+         state.searchinfo =response.data;
        }
        })
 
