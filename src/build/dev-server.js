@@ -91,7 +91,7 @@ apiRoutes.get('/rihan', function (req, res) {
 
 apiRoutes.get('/search', function (req, res) {
       var qs=new RegExp(req.query.name);
-  db.movies.find({"name":qs},null, function (err, info) {
+  db.movies.find({$or:[{"name":qs},{"stars":qs},{"director":qs}]},null, function (err, info) {
     res.json({
       errno: 0,
       data: info

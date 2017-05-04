@@ -2,12 +2,12 @@
 var page = require('webpage').create();
 var execFile = require('child_process').execFile;
 var n = 0;
-var id= 1902;
-var url = 'http://www.idyjy.com/w.asp?p=108&f=3&l=s';
+var id= 981;
+var url = 'http://www.idyjy.com/w.asp?p=56&f=3&l=s';
 var allurl;
 var allpaage;
 var nextpage;
-var numberpage = 107;
+var numberpage = 55;
 
 
 phantom.outputEncodings = 'utf-8';

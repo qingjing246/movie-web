@@ -36,7 +36,7 @@
       return {
         movies: {},
         name: "",
-        placeholder:"请输入片名"
+        placeholder:"请输入片名/导演/演员"
       }
     },
     computed: {
@@ -48,13 +48,14 @@
     methods: {
       ...mapActions(['submit']),
       start:function(){
-          if( this.name === ""){
+          if( this.name == ""){
+		  this.placeholder="不能为空"
           }else{
             this.submit(this.name);
              this.$router.push({path:"/api/movies"});
             if( this.searchinfo.length > 0){
                 this.name = "";
-                this.placeholder="请输入片名"
+                this.placeholder="请输入片名/导演/演员"
             }else{
               this.name = "";
               this.placeholder = "片名不存在请重新输入";
@@ -118,6 +119,7 @@
   a {
     text-decoration: none;
     font-style: normal;
+	cursor:pointer;
   }
 
   li {
@@ -163,20 +165,24 @@
     width: 1000px;
     margin: 0 auto;
     text-align: center;
+	
     //导航
     .nav-box {
-      background: rgba(169, 169, 169, 0.13);
+	  background:#1172c2;
+	  
     }
     .nav {
       display: inline-block;
-
+		
     }
     .nav-list {
       display: inline-block;
       a {
+		width:60px;
         padding: 10px;
         display: inline-block;
         margin: 0 20px;
+		color:#fff;
         &:hover {
           background: red;
         }

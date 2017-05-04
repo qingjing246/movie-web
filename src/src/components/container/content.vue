@@ -50,54 +50,54 @@
       <P class="title-list">热门电影</P>
       <hr>
       <div class="movies-list">
-        <ul class="clearflex">
-          <li v-for=""><a @click="url" movieid="969">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+        <ul class="ul-list clearflex">
+          <li ><a @click="url" movieid="969" title="极限特工3：终极回归">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
             <span>极限特工3：终极回归</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="">
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="功夫瑜伽">
             <span>功夫瑜伽</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="">
+          <li ><a  title="帕特森">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="帕特森">
             <span>帕特森</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="">
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
             <span>一条狗的使命</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="">
+          <li ><a title="八月">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="八月">
             <span>八月</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="">
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
             <span>逃出绝命镇</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>极限特工3：终极回归</span>
+          <li ><a title="金刚狼3：殊死一战">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23340.jpg" alt="金刚狼3：殊死一战">
+            <span>金刚狼3：殊死一战</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="">
-            <span>功夫瑜伽</span>
+          <li ><a title="了不起的菲丽西">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23341.jpg" alt="了不起的菲丽西">
+            <span>了不起的菲丽西</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="">
-            <span>帕特森</span>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="">
-            <span>一条狗的使命</span>
+          <li ><a title="决战食神">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23314.jpg" alt="决战食神">
+            <span>决战食神</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="">
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
             <span>八月</span>
           </a></li>
-          <li v-for=""><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="">
-            <span>逃出绝命镇</span>
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
+            <span>西游伏妖篇</span>
           </a></li>
         </ul>
       </div>
@@ -106,40 +106,83 @@
       <div class="clearflex">
         <p class="title-list">资源更新</p>
         <ul class="tab-list clearflex">
-          <li>
-            <a @mouseover="showtab" alt="1">更新</a>
+          <li class="tab-li">
+            <a class="tab-bg" @mouseover="showtab" alt="1">更新</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="2">动作片</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="3">喜剧片</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="4">爱情片</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="5">科幻片</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="6">恐怖片</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="7">剧情片</a>
           </li>
-          <li>
+          <li class="tab-li">
             <a @mouseover="showtab" alt="8">战争片</a>
           </li>
         </ul>
       </div>
       <hr>
       <div class="movies-list">
-        <ul class="clearflex" v-show="a.a">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>11111111111111111</span>
+        <ul class="ul-list clearflex" v-show="a.a">
+          <li ><a @click="url" movieid="969" title="极限特工3：终极回归">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
+            <span>极限特工3：终极回归</span>
           </a></li>
-
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="功夫瑜伽">
+            <span>功夫瑜伽</span>
+          </a></li>
+          <li ><a  title="帕特森">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="帕特森">
+            <span>帕特森</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="八月">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="八月">
+            <span>八月</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a title="金刚狼3：殊死一战">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23340.jpg" alt="金刚狼3：殊死一战">
+            <span>金刚狼3：殊死一战</span>
+          </a></li>
+          <li ><a title="了不起的菲丽西">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23341.jpg" alt="了不起的菲丽西">
+            <span>了不起的菲丽西</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="决战食神">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23314.jpg" alt="决战食神">
+            <span>决战食神</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
+            <span>西游伏妖篇</span>
+          </a></li>
         </ul>
         <ul class="clearflex" v-show="a.b">
           <li><a href="">
@@ -186,31 +229,120 @@
         </ul>
       </div>
     </div>
-    <div class="gn-movie">
-      <a href="#">日韩电影 >></a>
-
+	 <div class="gx-movie">
+      <div class="clearflex">
+        <p class="title-list">最新电视剧</p>
+        <ul class="tab-list clearflex">
+          <li class="tab-li">
+            <a class="tab-bg" @mouseover="showtab" alt="1">最新</a>
+          </li>
+          <li class="tab-li">
+            <a @mouseover="showtab" alt="2">国产剧</a>
+          </li>
+          <li class="tab-li">
+            <a @mouseover="showtab" alt="3">港台剧</a>
+          </li>
+          <li class="tab-li">
+            <a @mouseover="showtab" alt="4">欧美剧</a>
+          </li>
+          <li class="tab-li">
+            <a @mouseover="showtab" alt="5">日韩片</a>
+          </li>
+        </ul>
+      </div>
       <hr>
       <div class="movies-list">
-        <ul class="clearflex">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23393.jpg" alt="">
-            <span>sadasdasdas</span>
+        <ul class="ul-list clearflex" v-show="a.a">
+          <li ><a @click="url" movieid="969" title="极限特工3：终极回归">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
+            <span>极限特工3：终极回归</span>
           </a></li>
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23393.jpg" alt="">
-            <span>sadasdasdas</span>
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="功夫瑜伽">
+            <span>功夫瑜伽</span>
           </a></li>
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23393.jpg" alt="">
-            <span>sadasdasdas</span>
+          <li ><a  title="帕特森">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="帕特森">
+            <span>帕特森</span>
           </a></li>
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23393.jpg" alt="">
-            <span>sadasdasdas</span>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
           </a></li>
+          <li ><a title="八月">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="八月">
+            <span>八月</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a title="金刚狼3：殊死一战">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23340.jpg" alt="金刚狼3：殊死一战">
+            <span>金刚狼3：殊死一战</span>
+          </a></li>
+          <li ><a title="了不起的菲丽西">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23341.jpg" alt="了不起的菲丽西">
+            <span>了不起的菲丽西</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="决战食神">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23314.jpg" alt="决战食神">
+            <span>决战食神</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
+            <span>西游伏妖篇</span>
+          </a></li>
+        </ul>
+        <ul class="clearflex" v-show="a.b">
           <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23393.jpg" alt="">
-            <span>sadasdasdas</span>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>22222222222222</span>
+          </a></li>
+
+        </ul>
+        <ul class="clearflex" v-show="a.c">
+          <li><a href="">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>cccccc</span>
+          </a></li>
+        </ul>
+        <ul class="clearflex" v-show="a.d">
+          <li><a href="">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>ddddd</span>
+          </a></li>
+        </ul>
+        <ul class="clearflex" v-show="a.e">
+          <li><a href="">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>eeeeee</span>
+          </a></li>
+        </ul>
+        <ul class="clearflex" v-show="a.f">
+          <li><a href="">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>ffffff</span>
+          </a></li>
+        </ul>
+        <ul class="clearflex" v-show="a.g">
+          <li><a href="">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>ggggg</span>
+          </a></li>
+        </ul>
+        <ul class="clearflex" v-show="a.h">
+          <li><a href="">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
+            <span>hhhhhhh</span>
           </a></li>
         </ul>
       </div>
@@ -292,6 +424,10 @@
     background: #065fa9;
     color: #fff;
   }
+  .ul-list{
+	  padding:20px 0;
+	  
+  }
 
   //轮播图
   .content {
@@ -352,8 +488,9 @@
 
     .hot-movie {
       padding: 10px 5px;
-
-      .movies-list {
+      
+    }
+	.movies-list {
         a {
           font-weight: 600;
           color: #333;
@@ -362,7 +499,7 @@
             text-decoration: underline;
           }
         }
-      }
+      
       span {
         font-style: normal;
         display: block;
@@ -375,7 +512,7 @@
       li {
         box-sizing: border-box;
         width: 145px;
-        margin: 0 10px;
+        margin: 10px 10px;
         float: left;
         a {
           display: block;
@@ -391,10 +528,11 @@
           border: 1px solid red;
         }
       }
-      ul {
-        padding: 10px 0;
-      }
-    }
+	}
+	  
+	
+	  
+	  
     .title-list {
       padding: 5px;
       display: inline-block;
@@ -410,12 +548,16 @@
       .tab-list {
         float: left;
         margin-left: 200px;
+		
         li {
-          padding: 5px 0;
-          float: left;
+			
+			float: left;
+			padding: 0;
           a {
-            padding: 5px 20px;
-
+			  display:inline-block;
+			text-align:center;
+			padding:5px 0;
+			width:80px;
           }
         }
 
