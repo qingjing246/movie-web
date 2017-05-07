@@ -16,13 +16,15 @@ var insertData = function (db, callback) {
         time: a[1],
         adder: a[2],
         updatahref: a[3],
-        type:a[4],
-        director:a[5],
-        stars:a[6],
-        plot:a[7],
-        img:a[8],
-        id:a[9],
-        datatype:'movie'
+        updataname:a[4],
+        type:a[5],
+        director:a[6],
+        stars:a[7],
+        plot:a[8],
+        img:a[9],
+        pf:a[10],
+        id:a[11],
+        datatype:'tv'
     }];
     collectioninfo.insert(Data, function (err, result) {
         callback(result);
@@ -38,3 +40,6 @@ Mongoclient.connect(DB_url,function(err,db){
     })
 
 });
+/**
+ * Created by Administrator on 2017-05-04.
+ */

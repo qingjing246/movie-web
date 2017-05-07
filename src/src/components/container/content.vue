@@ -135,17 +135,17 @@
       <hr>
       <div class="movies-list">
         <ul class="ul-list clearflex" v-show="a.a">
-          <li ><a @click="url" movieid="969" title="极限特工3：终极回归">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
-            <span>极限特工3：终极回归</span>
+          <li ><a @click="url" movieid="969" title="成为沃伦·巴菲特">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23155.jpg" alt="成为沃伦·巴菲特">
+            <span>成为沃伦·巴菲特</span>
           </a></li>
-          <li ><a title="功夫瑜伽">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="功夫瑜伽">
-            <span>功夫瑜伽</span>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>爱乐之城</span>
           </a></li>
-          <li ><a  title="帕特森">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="帕特森">
-            <span>帕特森</span>
+          <li ><a  title="贾斯汀·汀布莱克与田纳西孩子们">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-11/22692.jpg" alt="贾斯汀·汀布莱克与田纳西孩子们">
+            <span>贾斯汀·汀布莱克与田纳西孩子们</span>
           </a></li>
           <li ><a title="一条狗的使命">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
@@ -184,47 +184,356 @@
             <span>西游伏妖篇</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.b">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>22222222222222</span>
+        <ul class="ul-list clearflex" v-show="a.b">
+          <li ><a title="这个杀手不太冷">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/1500.jpg" alt="这个杀手不太冷">
+            <span>这个杀手不太冷</span>
+          </a></li>
+          <li ><a title="盗梦空间">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/6095.jpg" alt="盗梦空间">
+            <span>盗梦空间</span>
+          </a></li>
+          <li ><a title="大话西游之仙履奇缘">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2188.jpg" alt="大话西游之仙履奇缘">
+            <span>大话西游之仙履奇缘</span>
+          </a></li>
+          <li ><a title="七武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/1081.jpg" alt="七武士">
+            <span>七武士</span>
+          </a></li>
+          <li ><a title="指环王3：王者无敌">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2154.jpg" alt="指环王3：王者无敌">
+            <span>指环王3：王者无敌</span>
+          </a></li>
+          <li ><a title="蝙蝠侠：黑暗骑士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2168.jpg" alt="蝙蝠侠：黑暗骑士">
+            <span>蝙蝠侠：黑暗骑士</span>
+          </a></li>
+          <li ><a title="将军号">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-1/3770.jpg" alt="将军号">
+            <span>将军号</span>
+          </a></li>
+          <li ><a title="功夫瑜伽">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
+            <span>西游伏妖篇</span>
+          </a></li>
+          <li ><a title="指环王1：魔戒再现">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2157.jpg" alt="指环王1：魔戒再现">
+            <span>指环王1：魔戒再现</span>
+          </a></li>
+          <li ><a title="大话西游之月光宝盒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2189.jpg" alt="大话西游之月光宝盒">
+            <span>大话西游之月光宝盒</span>
+          </a></li>
+          <li ><a title="指环王2：双塔奇兵">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2155.jpg" alt="指环王2：双塔奇兵">
+            <span>指环王2：双塔奇兵</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
           </a></li>
 
         </ul>
-        <ul class="clearflex" v-show="a.c">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>cccccc</span>
+        <ul class="ul-list clearflex" v-show="a.c">
+          <<li ><a title="影子武士">
+          <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+          <span>影子武士</span>
+        </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
+          </a></li>
+          <li ><a title="影子武士">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="影子武士">
+            <span>影子武士</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.d">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>ddddd</span>
+        <ul class="ul-list clearflex" v-show="a.d">
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
+          </a></li>
+          <li ><a title="美丽人生">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.e">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>eeeeee</span>
+        <ul class="ul-list clearflex" v-show="a.e">
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
+          </a></li>
+          <li ><a title="三傻大闹宝莱坞">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
+            <span>三傻大闹宝莱坞</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.f">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>ffffff</span>
+        <ul class="ul-list clearflex" v-show="a.f">
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
+          </a></li>
+          <li ><a title="触不可及">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4326.jpg" alt="触不可及">
+            <span>触不可及</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.g">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>ggggg</span>
+        <ul class="ul-list clearflex" v-show="a.g">
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
           </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+          <li ><a title="马戏团">
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/4065.jpg" alt="马戏团">
+            <span>马戏团</span>
+          </a></li>
+
         </ul>
-        <ul class="clearflex" v-show="a.h">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>hhhhhhh</span>
+        <ul class="ul-list clearflex" v-show="a.h">
+          <li ><a title="两杆大烟枪">
+          <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+          <span>两杆大烟枪</span>
+        </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
+          </a></li>
+          <li ><a title="两杆大烟枪">
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2422.jpg" alt="两杆大烟枪">
+            <span>两杆大烟枪</span>
           </a></li>
         </ul>
       </div>
@@ -232,27 +541,27 @@
 	 <div class="gx-movie">
       <div class="clearflex">
         <p class="title-list">最新电视剧</p>
-        <ul class="tab-list clearflex">
+        <ul class="tab-list2 clearflex">
           <li class="tab-li">
             <a class="tab-bg" @mouseover="showtab" alt="1">最新</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab" alt="2">国产剧</a>
+            <a @mouseover="showtab2" alt="1">国产剧</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab" alt="3">港台剧</a>
+            <a @mouseover="showtab2" alt="2">港台剧</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab" alt="4">欧美剧</a>
+            <a @mouseover="showtab2" alt="3">欧美剧</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab" alt="5">日韩片</a>
+            <a @mouseover="showtab2" alt="4">日韩片</a>
           </li>
         </ul>
       </div>
       <hr>
       <div class="movies-list">
-        <ul class="ul-list clearflex" v-show="a.a">
+        <ul class="ul-list clearflex" v-show="b.a">
           <li ><a @click="url" movieid="969" title="极限特工3：终极回归">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
             <span>极限特工3：终极回归</span>
@@ -302,14 +611,14 @@
             <span>西游伏妖篇</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.b">
+        <ul class="clearflex" v-show="b.b">
           <li><a href="">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
             <span>22222222222222</span>
           </a></li>
 
         </ul>
-        <ul class="clearflex" v-show="a.c">
+        <ul class="clearflex" v-show="b.c">
           <li><a href="">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
             <span>cccccc</span>
@@ -333,13 +642,13 @@
             <span>ffffff</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.g">
+        <ul class="clearflex" v-show="b.g">
           <li><a href="">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
             <span>ggggg</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.h">
+        <ul class="clearflex" v-show="b.h">
           <li><a href="">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
             <span>hhhhhhh</span>
@@ -365,6 +674,16 @@
           f: '',
           g: '',
           h: ''
+        },
+        b:{
+          a:true,
+          b: '',
+          c: '',
+          d: '',
+          e: '',
+          f: '',
+          g: '',
+          h: ''
         }
       }
     },
@@ -381,36 +700,58 @@
         event.target.className = "tab-bg";
         switch (event.target.getAttribute('alt')) {
           case '1':
-            this.a.a = true
+            this.a.a = true;
             break;
           case '2':
-            this.a.b = true
+            this.a.b = true;
             break;
           case '3':
-            this.a.c = true
+            this.a.c = true;
             break;
           case '4':
-            this.a.d = true
+            this.a.d = true;
             break;
           case '5':
-            this.a.e = true
+            this.a.e = true;
             break;
           case '6':
-            this.a.f = true
+            this.a.f = true;
             break;
           case '7':
-            this.a.g = true
+            this.a.g = true;
             break;
           case '8':
-            this.a.h = true
+            this.a.h = true;
             break;
         }
       },
+      showtab2:function (event){
+        var Oli = document.getElementsByClassName('tab-list2')[0].querySelectorAll('a');
+        for (var i = 0; i < Oli.length; i++) {
+          Oli[i].className = '';
+        }
+        for (i in this.b) {
+          this.b[i] = false;
+        }
+        event.target.className = "tab-bg";
+        switch (event.target.getAttribute('alt')) {
+          case '1':
+            this.b.a = true;
+            break;
+          case '2':
+            this.b.b = true;
+            break;
+          case '3':
+            this.b.c = true;
+            break;
+          case '4':
+            this.b.d = true;
+            break;
+        }
+       },
       url: function (event) {
         let m = event.path[1].getAttribute('movieid');
         this.$router.push({path:"/api/info?id="+m});
-        /*this.getinfo(m);
-        console.log(m);*/
       }
     }
 
@@ -426,7 +767,7 @@
   }
   .ul-list{
 	  padding:20px 0;
-	  
+
   }
 
   //轮播图
@@ -488,7 +829,7 @@
 
     .hot-movie {
       padding: 10px 5px;
-      
+
     }
 	.movies-list {
         a {
@@ -499,7 +840,7 @@
             text-decoration: underline;
           }
         }
-      
+
       span {
         font-style: normal;
         display: block;
@@ -529,10 +870,10 @@
         }
       }
 	}
-	  
-	
-	  
-	  
+
+
+
+
     .title-list {
       padding: 5px;
       display: inline-block;
@@ -545,12 +886,12 @@
       .title-list {
         float: left;
       }
-      .tab-list {
+      .tab-list,.tab-list2,tab-list3 {
         float: left;
         margin-left: 200px;
-		
+
         li {
-			
+
 			float: left;
 			padding: 0;
           a {

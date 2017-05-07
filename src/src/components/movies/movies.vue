@@ -55,11 +55,11 @@
 
     }
     img{
-      height: 250px;
+      height: 200px;
       padding:3px;
       width: 160px;
       box-sizing: border-box;
-      border: 1px solid #fff;
+      border: 1px solid #333;
       &:hover{
         border: 1px solid red;
 
