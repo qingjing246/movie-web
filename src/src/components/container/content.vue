@@ -139,7 +139,7 @@
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23155.jpg" alt="成为沃伦·巴菲特">
             <span>成为沃伦·巴菲特</span>
           </a></li>
-          <li ><a title="爱乐之城">
+          <li ><a href="#" title="爱乐之城">
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
             <span>爱乐之城</span>
           </a></li>
@@ -360,7 +360,7 @@
             <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
             <span>三傻大闹宝莱坞</span>
           </a></li>
-          <li ><a title="三傻大闹宝莱坞">
+          <li ><a href="#" title="三傻大闹宝莱坞">
             <img src="http://img.idyjy.com/pic/uploadimg/2016-6/4103.jpg" alt="三傻大闹宝莱坞">
             <span>三傻大闹宝莱坞</span>
           </a></li>
@@ -543,19 +543,19 @@
         <p class="title-list">最新电视剧</p>
         <ul class="tab-list2 clearflex">
           <li class="tab-li">
-            <a class="tab-bg" @mouseover="showtab" alt="1">最新</a>
+            <a class="tab-bg" @mouseover="showtab2" alt="1">最新</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab2" alt="1">国产剧</a>
+            <a @mouseover="showtab2" alt="2">国产剧</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab2" alt="2">港台剧</a>
+            <a @mouseover="showtab2" alt="3">港台剧</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab2" alt="3">欧美剧</a>
+            <a @mouseover="showtab2" alt="4">欧美剧</a>
           </li>
           <li class="tab-li">
-            <a @mouseover="showtab2" alt="4">日韩片</a>
+            <a @mouseover="showtab2" alt="5">日韩片</a>
           </li>
         </ul>
       </div>
@@ -612,47 +612,205 @@
           </a></li>
         </ul>
         <ul class="clearflex" v-show="b.b">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>22222222222222</span>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
+          </a></li>
+          <li ><a title="一条狗的使命">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
+            <span>一条狗的使命</span>
           </a></li>
 
         </ul>
         <ul class="clearflex" v-show="b.c">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>cccccc</span>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
+          </a></li>
+          <li ><a title="怒">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
+            <span>怒</span>
           </a></li>
         </ul>
-        <ul class="clearflex" v-show="a.d">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>ddddd</span>
+        <ul class="clearflex" v-show="b.d">
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
           </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+          <li ><a title="爱乐之城">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
+            <span>八月</span>
+          </a></li>
+
         </ul>
-        <ul class="clearflex" v-show="a.e">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>eeeeee</span>
+        <ul class="clearflex" v-show="b.e">
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
           </a></li>
-        </ul>
-        <ul class="clearflex" v-show="a.f">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>ffffff</span>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
           </a></li>
-        </ul>
-        <ul class="clearflex" v-show="b.g">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>ggggg</span>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
           </a></li>
-        </ul>
-        <ul class="clearflex" v-show="b.h">
-          <li><a href="">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="">
-            <span>hhhhhhh</span>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
           </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li>
+          <li ><a  title="逃出绝命镇">
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+            <span>逃出绝命镇</span>
+          </a></li> <li ><a  title="逃出绝命镇">
+          <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
+          <span>逃出绝命镇</span>
+        </a></li>
         </ul>
       </div>
     </div>
@@ -680,10 +838,7 @@
           b: '',
           c: '',
           d: '',
-          e: '',
-          f: '',
-          g: '',
-          h: ''
+          e: ''
         }
       }
     },
@@ -747,13 +902,24 @@
           case '4':
             this.b.d = true;
             break;
+          case '5':
+            this.b.e = true;
+            break;
         }
        },
       url: function (event) {
         let m = event.path[1].getAttribute('movieid');
         this.$router.push({path:"/api/info?id="+m});
       }
-    }
+    },
+    created (){
+      var allA = document.getElementsByTagName('a');
+      for(var i = 0;i< allA.length; i++){
+          allA[i].onclick = function (){
+
+          }
+      }
+    },
 
   };
 
@@ -771,7 +937,7 @@
   }
 
   //轮播图
-  .content {
+
     .carousel {
       margin-bottom: 20px;
       position: relative;
@@ -887,7 +1053,7 @@
         float: left;
       }
       .tab-list,.tab-list2,tab-list3 {
-        float: left;
+        float: right;
         margin-left: 200px;
 
         li {
@@ -905,5 +1071,5 @@
       }
 
     }
-  }
+
 </style>

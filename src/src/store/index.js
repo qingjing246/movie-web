@@ -13,6 +13,9 @@ Vue.use(VueRouter)
 
 const store = new Vuex.Store({
   state:{
+    search:{
+
+    },
     movie_info:{},
     searchname:'',
     searchinfo:{
@@ -45,7 +48,15 @@ const store = new Vuex.Store({
          state.searchinfo =response.data;
        }
        })
-
+    },
+    movies :function ({dispath,state},movie_info){
+      Vue.http.get('/api/movies',{params: {datatype:movie_info[0],type:movie_info[1],adder:movie_info[2],time:movie_info[3],jb:movie_info[4]}}).then((response) => {
+        response = response.body;
+        if (response.errno === 0) {
+          state.search =response.data;
+          console.log(response.data);
+        }
+      });
     }
 
 

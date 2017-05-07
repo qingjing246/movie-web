@@ -38,7 +38,13 @@ var app = express()
 var apiRoutes = express.Router();
 
 apiRoutes.get('/movies', function (req,res){
-  db.movies.find({}, null,{sort:{"id":1},limit:10}, function (err, info) {
+  var datatype =new RegExp(req.query.datatype);
+  var type=new RegExp(req.query.type);
+  var adder=new RegExp(req.query.adder);
+  var time=new RegExp(req.query.time);
+  var jb = Number(req.query.jb);
+  db.movies.find({"datatype":datatype,"type":type,"adder":adder,"time":time},null,{sort:{"time":jb},limit:18}, function (err, info) {
+    console.log(jb,type,datatype);
     res.json({
       errno: 0,
       data: info
@@ -58,36 +64,7 @@ apiRoutes.get('/info', function (req,res){
   });
 });
 
-apiRoutes.get('/oumei', function (req, res) {
 
-	db.movies.find({"adder":/欧美/}, null,{limit:5}, function (err, info) {
-		res.json({
-		errno: 0,
-		data: info
-	});
-	});
-});
-apiRoutes.get('/dalu', function (req, res) {
-
-	db.movies.find({"adder":/大陆/},null,{limit:5}, function (err, info) {
-
-		res.json({
-		errno: 0,
-		data: info
-	});
-	});
-});
-
-apiRoutes.get('/rihan', function (req, res) {
-
-  db.movies.find({"adder":/日/},null,{limit:5}, function (err, info) {
-
-    res.json({
-      errno: 0,
-      data: info
-    });
-  });
-});
 
 apiRoutes.get('/search', function (req, res) {
       var qs=new RegExp(req.query.name);

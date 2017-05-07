@@ -6,7 +6,7 @@
       <div class="nav-box">
         <ul class="nav">
           <router-link class="nav-list" tag="li" to="/"><a href="">首页</a></router-link>
-          <router-link class="nav-list" tag="li" to="/api/movies" @click.native="dianying()"><a href="">电影</a>
+          <router-link class="nav-list" tag="li" to="/api/movies" ><a href="">电影</a>
           </router-link>
           <router-link class="nav-list" tag="li" to="/api/tv" @click.native="tv()"><a href="">电视剧</a></router-link>
           <router-link class="nav-list" tag="li" to="/api/donghua" @click.native="donghua()"><a href="">动画片</a>
@@ -52,7 +52,7 @@
 		  this.placeholder="不能为空"
           }else{
             this.submit(this.name);
-             this.$router.push({path:"/api/movies"});
+             this.$router.push({path:"/api/search"});
             if( this.searchinfo.length > 0){
                 this.name = "";
                 this.placeholder="请输入片名/导演/演员"
@@ -165,15 +165,15 @@
     width: 1000px;
     margin: 0 auto;
     text-align: center;
-	
+
     //导航
     .nav-box {
 	  background:#1172c2;
-	  
+
     }
     .nav {
       display: inline-block;
-		
+
     }
     .nav-list {
       display: inline-block;
