@@ -13,9 +13,8 @@ Vue.use(VueRouter)
 
 const store = new Vuex.Store({
   state:{
-    search:{
-
-    },
+    search:{},
+    all:10,
     movie_info:{},
     searchname:'',
     searchinfo:{
@@ -50,11 +49,12 @@ const store = new Vuex.Store({
        })
     },
     movies :function ({dispath,state},movie_info){
-      Vue.http.get('/api/movies',{params: {datatype:movie_info[0],type:movie_info[1],adder:movie_info[2],time:movie_info[3],jb:movie_info[4]}}).then((response) => {
+      Vue.http.get('/api/movies',{params: {datatype:movie_info[0],type:movie_info[1],adder:movie_info[2],time:movie_info[3],jb:movie_info[4],page:movie_info[5]}}).then((response) => {
         response = response.body;
         if (response.errno === 0) {
           state.search =response.data;
-          console.log(response.data);
+          state.all = Math.ceil(response.all/18);
+          console.log(state.search);
         }
       });
     }

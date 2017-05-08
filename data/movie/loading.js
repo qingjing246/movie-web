@@ -1,13 +1,13 @@
-var page = require('webpage').create();
+﻿var page = require('webpage').create();
 var execFile = require('child_process').execFile;
 var n = 0;
-var id = 894;
-var url = 'http://www.idyjy.com/w.asp?p=51&f=3&l=s';
+var id = 6525;
+var url = 'http://www.idyjy.com/w.asp?p=438&f=3&l=s';
 var allurl;
 var allpaage;
 var nextpage;
 var pingfen;
-var numberpage = 50;
+var numberpage = 437
 
 
 phantom.outputEncodings = 'utf-8';

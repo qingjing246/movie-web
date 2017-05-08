@@ -43,13 +43,22 @@ apiRoutes.get('/movies', function (req,res){
   var adder=new RegExp(req.query.adder);
   var time=new RegExp(req.query.time);
   var jb = Number(req.query.jb);
-  db.movies.find({"datatype":datatype,"type":type,"adder":adder,"time":time},null,{sort:{"time":jb},limit:18}, function (err, info) {
-    console.log(jb,type,datatype);
-    res.json({
-      errno: 0,
-      data: info
-    });
+  var page = 18*Number(req.query.page);
+
+  db.movies.find({"datatype":datatype,"type":type,"adder":adder,"time":time},null,{sort:{"time":jb},skip:page-18,limit:18},
+    function (err, info) {
+      console.log(info);
+      db.movies.count({"datatype":datatype,"type":type,"adder":adder,"time":time},function (err,count){
+        console.log(count);
+        res.json({
+          errno: 0,
+          data: info,
+          all:count
+        });
+      });
+    console.log(jb,type,datatype,page);
   });
+
 });
 
 apiRoutes.get('/info', function (req,res){
