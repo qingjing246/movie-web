@@ -1,7 +1,6 @@
 <template>
 <div>
-  动画列表
-  <p>{{}}</p>
+  暂时未开通
 </div>
 </template>
 <script type="text/ecmascript-6">
@@ -10,11 +9,9 @@
   export default {
     data (){
       return {
-        a:"123"
       }
     },
     computed:{
-      ...mapGetters(['b'])
     },
     methods:{
 

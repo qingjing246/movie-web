@@ -63,8 +63,9 @@ apiRoutes.get('/movies', function (req,res){
 
 apiRoutes.get('/info', function (req,res){
   var id = Number(req.query.id);
-  console.log(typeof id);
-  db.movies.find({"id":id}, null, function (err, info) {
+  var name = req.query.name;
+  console.log(id,name);
+  db.movies.find({$or:[{"name":name},{"id":id}]}, null, function (err, info) {
     console.log(info);
     res.json({
       errno: 0,

@@ -227,7 +227,6 @@
         }
         this.movies(this.searchlist);
         this.pagesa(this.click_api);
-
         console.log(this.searchlist);
         console.log(this.search.length);
       }
@@ -359,7 +358,6 @@
   .pager-jump .jump-input {
     width: 60px;
     height: 32px;
-    padding: 5px;
     outline: none;
     border: 1px solid #ddd;
     font-size: 14px;

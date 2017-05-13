@@ -12,27 +12,25 @@ Vue.use(VueRouter)
 
 
 const store = new Vuex.Store({
-  state:{
-    search:{},
-    all:10,
-    movie_info:{},
-    searchname:'',
-    searchinfo:{
-      type:Object
+  state: {
+    search: {},
+    all: 10,
+    movie_info: {},
+    searchname: '',
+    searchinfo: {
+      type: Object
     },
-    placeholder:'请输入片名'
+    placeholder: '请输入片名'
   },
-  getters:{
-
-  },
-  mutations:{
+  getters: {},
+  mutations: {
     clear (state){
       state.searchinfo = '';
     }
   },
-  actions:{
-    submit :function ({dispath,state},name){
-      Vue.http.get('/api/search', {params: {name:name}}).then((response) => {
+  actions: {
+    submit: function ({dispath, state}, name) {
+      Vue.http.get('/api/search', {params: {name: name}}).then((response) => {
         response = response.body;
         if (response.errno === 0) {
           state.searchinfo = response.data;
@@ -40,20 +38,47 @@ const store = new Vuex.Store({
         }
       })
     },
-    getinfo :function ({dispath,state},id){
-      Vue.http.get('/api/info',{params: {id:id}}).then((response) => {
-       response = response.body;
-       if (response.errno === 0) {
-         state.searchinfo =response.data;
-       }
-       })
-    },
-    movies :function ({dispath,state},movie_info){
-      Vue.http.get('/api/movies',{params: {datatype:movie_info[0],type:movie_info[1],adder:movie_info[2],time:movie_info[3],jb:movie_info[4],page:movie_info[5]}}).then((response) => {
+    getinfo: function ({dispath, state}, id) {
+      state.searchinfo = {};
+      Vue.http.get('/api/info', {params: {id: id}}).then((response) => {
         response = response.body;
         if (response.errno === 0) {
-          state.search =response.data;
-          state.all = Math.ceil(response.all/18);
+          state.searchinfo = response.data;
+          console.log(response.data);
+        }else{
+          state.searchinfo = '未找到相关信息';
+          console.log(state.searchinfo);
+        }
+      })
+    },
+    getname: function ({dispath, state}, name) {
+      state.searchinfo = {};
+      Vue.http.get('/api/info', {params: {name: name}}).then((response) => {
+        response = response.body;
+        if (response.errno === 0) {
+          state.searchinfo = response.data;
+          console.log(response.data);
+        }else{
+          state.searchinfo = '未找到相关信息';
+          console.log(state.searchinfo);
+        }
+      })
+    },
+    movies: function ({dispath, state}, movie_info) {
+      Vue.http.get('/api/movies', {
+        params: {
+          datatype: movie_info[0],
+          type: movie_info[1],
+          adder: movie_info[2],
+          time: movie_info[3],
+          jb: movie_info[4],
+          page: movie_info[5]
+        }
+      }).then((response) => {
+        response = response.body;
+        if (response.errno === 0) {
+          state.search = response.data;
+          state.all = Math.ceil(response.all / 18);
           console.log(state.search);
         }
       });
