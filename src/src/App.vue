@@ -15,11 +15,12 @@
       </div>
       <!--搜索栏-->
       <div class="search">
-        <form class="clearflex form-wrapper" id="form-wrapper">
-          <input id="value" type="text" v-model="name" :placeholder="placeholder" >
-          <button id="submit" type="submit" @click="start">搜索</button>
-        </form>
+        <div class="clearflex form-wrapper" id="form-wrapper">
+          <input id="value" type="text" @keyup="show($event)" v-model="name" :placeholder="placeholder" >
+          <button id="submit" type="submit"  @click="start">搜索</button>
+        </div>
       </div>
+
     </div>
     <router-view></router-view>
 
@@ -36,71 +37,45 @@
       return {
         movies: {},
         name: "",
-        placeholder:"请输入片名/导演/演员"
+
+
       }
     },
     computed: {
-      ...mapState(['searchinfo'])
+      ...mapState(['searchinfo','placeholder'])
     },
     created (){
-
     },
     methods: {
       ...mapActions(['submit']),
+      show: function (ev) {
+        if(ev.keyCode == 13){
+          this.start();
+        }
+      },
       start:function(){
           if( this.name == ""){
 		  this.placeholder="不能为空"
           }else{
             this.submit(this.name);
-             this.$router.push({path:"/api/search"});
-            if( this.searchinfo.length > 0){
+            this.$router.push({path:"/api/search"});
+            this.name = "";
+            /*if( this.searchinfo.length > 0){
                 this.name = "";
-                this.placeholder="请输入片名/导演/演员"
+                this.placeholder="请输入片名/导演/演员";
             }else{
               this.name = "";
               this.placeholder = "片名不存在请重新输入";
-            }
+            }*/
           }
-      },
-      a:function (){
-
-
-      },
-
-
-
-      dianying: function () {
-        this.$http.get('/api/movies').then((response) => {
-          response = response.body;
-          if (response.errno === 0) {
-            this.movies = Object.assign({}, this.movies, response.data);
-            console.log(this.movies);
-          }
-        })
-
-      },
-      tv: function () {
-        this.$http.get('/api/movies').then((response) => {
-          response = response.body;
-          if (response.errno === 0) {
-            this.oumei = response.data;
-          }
-        })
-      },
-      donghua: function () {
-        this.$http.get('/api/movies').then((response) => {
-          response = response.body;
-          if (response.errno === 0) {
-            this.oumei = response.data;
-          }
-        })
-
-
-      },
+      }
 
     },
 
-    components: {}
+    components: {},
+    watch :{
+
+    }
 
   }
 </script>

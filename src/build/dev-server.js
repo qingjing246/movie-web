@@ -64,13 +64,17 @@ apiRoutes.get('/movies', function (req,res){
 apiRoutes.get('/info', function (req,res){
   var id = Number(req.query.id);
   var name = req.query.name;
-  console.log(id,name);
   db.movies.find({$or:[{"name":name},{"id":id}]}, null, function (err, info) {
-    console.log(info);
-    res.json({
-      errno: 0,
-      data: info
-    });
+    if(info.length == 0){
+      res.json({
+        errno: 'undefined'
+      })
+    }else{
+      res.json({
+        errno: 0,
+        data: info
+      });
+    }
   });
 });
 
@@ -79,10 +83,18 @@ apiRoutes.get('/info', function (req,res){
 apiRoutes.get('/search', function (req, res) {
       var qs=new RegExp(req.query.name);
   db.movies.find({$or:[{"name":qs},{"stars":qs},{"director":qs}]},null, function (err, info) {
-    res.json({
-      errno: 0,
-      data: info
-    });
+    console.log(info.length);
+    if(info.length == 0){
+
+      res.json({
+        errno: 'undefined'
+      })
+    }else{
+      res.json({
+        errno: 0,
+        data: info
+      });
+    }
   });
 });
 

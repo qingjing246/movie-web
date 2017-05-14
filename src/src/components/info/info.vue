@@ -1,18 +1,28 @@
 <template>
   <div class="content-info">
-    <span class="movie-name">{{ searchinfo[0].name }}</span>
-    <div class="info-box clearflex">
-      <img class="movie-img" :src=searchinfo[0].img alt="">
-      <ul class="info-right">
-        <li><span>上映年代：</span>{{ searchinfo[0].time }}&nbsp;&nbsp;&nbsp;&nbsp;<span>地区:</span>{{ searchinfo[0].adder }}
-        </li>
-        <li><span>类型:</span>{{ searchinfo[0].type }}</li>
-        <li><span>导演:</span>{{ searchinfo[0].director }}</li>
-        <li><span>主演:</span>{{ searchinfo[0].stars }}</li>
-      </ul>
+    <div class="undefined" v-if=" abc == 'undefined'">
+      <p>没有找到该影片信息。</p>
     </div>
-    <p>{{ searchinfo[0].plot }}</p>
-    <a class="xl_url" :href=item v-for="item in searchinfo[0].updatahref">{{ item }}</a>
+    <div class="gif" v-if="searchinfo.length == 0 && abc.length == 0">
+      <img src="../movies/timg.gif" alt="">
+    </div>
+    <div v-for="item in searchinfo">
+      <span class="movie-name">{{ item.name }}</span>
+      <div class="info-box clearflex">
+        <img class="movie-img" :src=item.img alt="">
+        <ul class="info-right">
+          <li><span>上映年代：</span>{{ item.time }}&nbsp;&nbsp;&nbsp;&nbsp;<span>地区:</span>{{ item.adder }}
+          </li>
+          <li><span>类型:</span>{{ item.type }}</li>
+          <li><span>导演:</span>{{ item.director }}</li>
+          <li><span>主演:</span>{{ item.stars }}</li>
+        </ul>
+      </div>
+      <p>{{ searchinfo[0].plot }}</p>
+      <a class="xl_url" :href=item v-for="item in searchinfo[0].updatahref">{{ item }}</a>
+
+    </div>
+
   </div>
 </template>
 <script type="text/ecmascript-6">
@@ -25,7 +35,7 @@
       }
     },
     computed: {
-      ...mapState(['searchinfo']),
+      ...mapState(['searchinfo','abc']),
     },
     methods: {
       ...mapActions(['getname', 'getinfo','change']),

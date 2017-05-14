@@ -17,54 +17,56 @@ const store = new Vuex.Store({
     all: 10,
     movie_info: {},
     searchname: '',
-    searchinfo: {
-      type: Object
-    },
-    placeholder: '请输入片名'
+    searchinfo: {},
+    placeholder: '请输入片名/导演/演员',
+    abc:''
   },
   getters: {},
   mutations: {
-    clear (state){
-      state.searchinfo = '';
-    }
   },
   actions: {
     submit: function ({dispath, state}, name) {
+      state.searchinfo = '';
+      state.abc ='';
       Vue.http.get('/api/search', {params: {name: name}}).then((response) => {
         response = response.body;
+        console.log(response.errno);
         if (response.errno === 0) {
           state.searchinfo = response.data;
           state.searchname = name;
+        }else if(response.errno == 'undefined'){
+          state.abc = 'undefined';
         }
       })
     },
     getinfo: function ({dispath, state}, id) {
       state.searchinfo = {};
+      state.abc ='';
       Vue.http.get('/api/info', {params: {id: id}}).then((response) => {
         response = response.body;
+        console.log(response);
         if (response.errno === 0) {
           state.searchinfo = response.data;
-          console.log(response.data);
-        }else{
-          state.searchinfo = '未找到相关信息';
-          console.log(state.searchinfo);
+        }else if(response.errno == 'undefined'){
+          state.abc = 'undefined';
         }
       })
     },
     getname: function ({dispath, state}, name) {
       state.searchinfo = {};
+      state.abc ='';
       Vue.http.get('/api/info', {params: {name: name}}).then((response) => {
+        console.log(response);
         response = response.body;
         if (response.errno === 0) {
           state.searchinfo = response.data;
-          console.log(response.data);
-        }else{
-          state.searchinfo = '未找到相关信息';
-          console.log(state.searchinfo);
+        }else if(response.errno == 'undefined'){
+          state.abc = 'undefined';
         }
       })
     },
     movies: function ({dispath, state}, movie_info) {
+      state.search = '';
       Vue.http.get('/api/movies', {
         params: {
           datatype: movie_info[0],

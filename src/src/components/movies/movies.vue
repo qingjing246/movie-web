@@ -29,6 +29,9 @@
         </li>
       </ul>
     </div>
+    <div class="gif" v-if="search.length == 0 ">
+      <img src="../movies/timg.gif" alt="">
+    </div>
     <div class="aa">
       <ul class="movies-list clearflex">
         <li v-for="item in search">

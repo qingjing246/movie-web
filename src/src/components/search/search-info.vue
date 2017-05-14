@@ -1,6 +1,6 @@
 <template>
-  <div class="search-info">
-    <p>与“{{ searchname }}”相关的影视共有{{ searchinfo.length }}条</p>
+  <div class="search-info" >
+    <p v-if="searchinfo.length > 0">与“{{ searchname }}”相关的影视共有{{ searchinfo.length }}条</p>
     <p></p>
     <ul class="search-list">
       <li v-for="item in searchinfo">
@@ -10,7 +10,14 @@
         </router-link>
       </li>
     </ul>
+    <div class="undefined" v-if="abc=='undefined'">
+      <p>没有找到相关信息，请重新输入。</p>
+    </div>
+    <div class="gif" v-if="searchinfo.length == 0 && abc.length == 0">
+      <img src="../movies/timg.gif" alt="">
+    </div>
   </div>
+
 </template>
 
 <script type="text/ecmascript-6">
@@ -23,11 +30,12 @@
   export default {
     data (){
       return {
+
       }
     },
     computed: {
       ...mapMutations(['clear']),
-      ...mapState(['searchinfo','searchname']),
+      ...mapState(['searchinfo','searchname','abc']),
       ...mapGetters(['getname'])
     },
     created()
@@ -46,6 +54,14 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
+  .undefined{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+  }
+  .gif{
+    text-align: center;
+  }
   .search-list{
     padding:  20px 0;
     li{

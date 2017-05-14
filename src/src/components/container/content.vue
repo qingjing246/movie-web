@@ -13,45 +13,15 @@
           <img src="./1.jpg" alt="">
         </a>
       </div>
-      <ul class="carousel-bottom-new">
-        <li>
-          <a href="">
-            <p>啊啊啊啊</p>
-            <p>啊啊啊啊</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <p>啊啊啊啊</p>
-            <p>啊啊啊啊</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <p>啊啊啊啊</p>
-            <p>啊啊啊啊</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <p>啊啊啊啊</p>
-            <p>啊啊啊啊</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <p>啊啊啊啊</p>
-            <p>啊啊啊啊</p>
-          </a>
-        </li>
-      </ul>
+
     </div>
     <div class="hot-movie">
       <P class="title-list">热门电影</P>
       <hr>
       <div class="movies-list">
         <ul class="ul-list clearflex">
-          <li ><a @click="url" title="极限特工3：终极回归">
+          <li ><a @click="url" title="完美的世界">
+            <i class="before">2017</i><i class="after">5分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
             <span>极限特工3：终极回归</span>
           </a></li>
@@ -816,7 +786,6 @@
     </div>
   </div>
 </template>
-
 <script>
   import {mapActions} from 'vuex'
 
@@ -961,36 +930,6 @@
         }
 
       }
-      .carousel-bottom-new {
-        display: inline-block;
-        width: 1000px;
-        height: 60px;
-        background: rgba(12, 15, 20, 0.9);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        li {
-          float: left;
-          text-align: center;
-
-          a {
-            padding: 10px 0;
-            color: #fff;
-            height: 60px;
-            width: 200px;
-            display: inline-block;
-            box-sizing: border-box;
-            border-left: 1px solid #383838;
-
-            p {
-              line-height: 20px;
-            }
-
-          }
-        }
-
-      }
     }
 
     .hot-movie {
@@ -998,6 +937,8 @@
 
     }
 	.movies-list {
+
+
         a {
           font-weight: 600;
           color: #333;
@@ -1023,6 +964,27 @@
         float: left;
         a {
           display: block;
+          position: relative;
+          overflow: hidden;
+          &:hover{
+            &:before{
+              -webkit-animation: top 2s ease-in-out 0s 1 alternate forwards;
+            }
+          }
+          &:before{
+            content: '点击查看';
+            line-height: 195px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            color:#fff;
+            display: inline-block;
+            width: 145px;
+            height: 195px;
+            background:rgba(0,0,0,0.7);
+            position: absolute;
+            top: 229px;
+          }
         }
       }
       img {
@@ -1031,9 +993,12 @@
         padding: 3px;
         border: 1px solid #333;
         box-sizing: border-box;
+
+        z-index: 1;
         &:hover {
           border: 1px solid red;
         }
+
       }
 	}
 
@@ -1071,5 +1036,44 @@
       }
 
     }
+  @-webkit-keyframes top {
+    from{
+      top: 229px;
+      opacity:0;
+    }
+    to{
+      top: 0;
+      opacity:1;
+    }
+  }
+  .before{
+    display: inline-block;
+    width: 45px;
+    height:20px;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    color:#fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  i{
+    font-style: normal;
+  }
+  .after{
+    display: inline-block;
+    width: 45px;
+    height:20px;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    color:#fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    right: 0;
+    font-weight: bold;
+    top:175px;
+  }
 
 </style>
