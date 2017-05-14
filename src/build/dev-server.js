@@ -44,20 +44,36 @@ apiRoutes.get('/movies', function (req,res){
   var time=new RegExp(req.query.time);
   var jb = Number(req.query.jb);
   var page = 18*Number(req.query.page);
-
-  db.movies.find({"datatype":datatype,"type":type,"adder":adder,"time":time},null,{sort:{"time":jb},skip:page-18,limit:18},
-    function (err, info) {
-      console.log(info);
-      db.movies.count({"datatype":datatype,"type":type,"adder":adder,"time":time},function (err,count){
-        console.log(count);
-        res.json({
-          errno: 0,
-          data: info,
-          all:count
+  if(jb == '1'){
+    db.movies.find({"datatype":datatype,"type":type,"adder":adder,"time":time},null,{sort:{"time":-1},skip:page-18,limit:18},
+      function (err, info) {
+        console.log(info);
+        db.movies.count({"datatype":datatype,"type":type,"adder":adder,"time":time},function (err,count){
+          console.log(count);
+          res.json({
+            errno: 0,
+            data: info,
+            all:count
+          });
         });
+        console.log(jb,type,datatype,page);
       });
-    console.log(jb,type,datatype,page);
-  });
+  }else if(jb == '-1'){
+    db.movies.find({"datatype":datatype,"type":type,"adder":adder,"time":time},null,{sort:{"id":1},skip:page-18,limit:18},
+      function (err, info) {
+        console.log(info);
+        db.movies.count({"datatype":datatype,"type":type,"adder":adder,"time":time},function (err,count){
+          console.log(count);
+          res.json({
+            errno: 0,
+            data: info,
+            all:count
+          });
+        });
+        console.log(jb,type,datatype,page);
+      });
+  }
+
 
 });
 

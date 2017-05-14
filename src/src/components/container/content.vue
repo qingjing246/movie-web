@@ -20,55 +20,64 @@
       <hr>
       <div class="movies-list">
         <ul class="ul-list clearflex">
-          <li ><a @click="url" title="完美的世界">
-            <i class="before">2017</i><i class="after">5分</i>
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
-            <span>极限特工3：终极回归</span>
+          <li ><a @click="url" title="肖申克的救赎">
+            <i class="before">2012</i><i class="after">9.6分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/8862.jpg" alt="肖申克的救赎">
+            <span>肖申克的救赎</span>
           </a></li>
-          <li ><a @click="url" title="功夫瑜伽">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="功夫瑜伽">
-            <span>功夫瑜伽</span>
+          <li ><a @click="url" title="钢琴家">
+            <i class="before">2002</i><i class="after">9分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-2/9111.jpg" alt="钢琴家">
+            <span>钢琴家</span>
           </a></li>
-          <li ><a @click="url"  title="帕特森">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="帕特森">
-            <span>帕特森</span>
+          <li ><a @click="url" title="穹顶之下">
+            <i class="before">2015</i><i class="after">9.5分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2015-12/11194.jpg" alt="穹顶之下">
+            <span>穹顶之下</span>
           </a></li>
-          <li ><a @click="url" title="一条狗的使命">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
-            <span>一条狗的使命</span>
+          <li ><a @click="url"  title="美丽人生">
+            <i class="before">1997</i><i class="after">9.5分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2847.jpg" alt="美丽人生">
+            <span>美丽人生</span>
           </a></li>
-          <li ><a @click="url" title="八月">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="八月">
-            <span>八月</span>
+          <li ><a @click="url" title="辛德勒的名单">
+            <i class="before">1993</i><i class="after">9.4分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="辛德勒的名单">
+            <span>辛德勒的名单</span>
           </a></li>
-          <li ><a @click="url"  title="逃出绝命镇">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
-            <span>逃出绝命镇</span>
+          <li ><a @click="url" title="这个杀手不太冷">
+            <i class="before">1994</i><i class="after">9.4分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/1500.jpg" alt="这个杀手不太冷">
+            <span>这个杀手不太冷</span>
           </a></li>
-          <li ><a @click="url" title="金刚狼3：殊死一战">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23340.jpg" alt="金刚狼3：殊死一战">
-            <span>金刚狼3：殊死一战</span>
+          <li ><a @click="url" title="阿甘正传">
+            <i class="before">1994</i><i class="after">9.4分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/2266.jpg" alt="阿甘正传">
+            <span>阿甘正传</span>
+          </a></li><li ><a @click="url" title="教父">
+          <i class="before">1972</i><i class="after">9.2分</i>
+          <img src="http://img.idyjy.com/pic/uploadimg/2016-6/772.jpg" alt="教父">
+          <span>教父</span>
+        </a></li><li ><a @click="url" title="放牛班的春天">
+          <i class="before">2004</i><i class="after">9.2分</i>
+          <img src="http://img.idyjy.com/pic/uploadimg/2016-6/8731.jpg" alt="放牛班的春天">
+          <span>放牛班的春天</span>
+        </a></li><li ><a @click="url" title="忠犬八公的故事">
+          <i class="before">2009</i><i class="after">9.2分</i>
+          <img src="http://img.idyjy.com/pic/uploadimg/2016-6/8482.jpg" alt="忠犬八公的故事">
+          <span>忠犬八公的故事</span>
+        </a></li>
+          <li ><a @click="url" title="盗梦空间">
+            <i class="before">2010</i><i class="after">9.2分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/6095.jpg" alt="盗梦空间">
+            <span>盗梦空间</span>
           </a></li>
-          <li ><a @click="url" title="了不起的菲丽西">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23341.jpg" alt="了不起的菲丽西">
-            <span>了不起的菲丽西</span>
+          <li ><a @click="url" title="搏击俱乐部">
+            <i class="before">1999</i><i class="after">9.1分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2016-6/9848.jpg" alt="搏击俱乐部">
+            <span>搏击俱乐部</span>
           </a></li>
-          <li ><a @click="url" title="怒">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
-            <span>怒</span>
-          </a></li>
-          <li ><a @click="url" title="决战食神">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23314.jpg" alt="决战食神">
-            <span>决战食神</span>
-          </a></li>
-          <li ><a @click="url" title="爱乐之城">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
-            <span>八月</span>
-          </a></li>
-          <li ><a @click="url" title="功夫瑜伽">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
-            <span>西游伏妖篇</span>
-          </a></li>
+
         </ul>
       </div>
     </div>
@@ -106,52 +115,64 @@
       <div class="movies-list">
         <ul class="ul-list clearflex" v-show="a.a">
           <li ><a @click="url" title="成为沃伦·巴菲特">
+            <i class="before">1999</i><i class="after">9.1分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23155.jpg" alt="成为沃伦·巴菲特">
             <span>成为沃伦·巴菲特</span>
           </a></li>
           <li ><a @click="url"  title="爱乐之城">
+            <i class="before">2017</i><i class="after">8.4分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
             <span>爱乐之城</span>
           </a></li>
           <li ><a @click="url"  title="贾斯汀·汀布莱克与田纳西孩子们">
+            <i class="before">2016</i><i class="after">8.9分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2016-11/22692.jpg" alt="贾斯汀·汀布莱克与田纳西孩子们">
             <span>贾斯汀·汀布莱克与田纳西孩子们</span>
           </a></li>
           <li ><a @click="url" title="一条狗的使命">
+            <i class="before">2017</i><i class="after">7.7分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
             <span>一条狗的使命</span>
           </a></li>
           <li ><a @click="url" title="八月">
+            <i class="before">2017</i><i class="after">7.3分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="八月">
             <span>八月</span>
           </a></li>
           <li ><a @click="url"  title="逃出绝命镇">
+            <i class="before">2017</i><i class="after">7.7分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
             <span>逃出绝命镇</span>
           </a></li>
           <li ><a @click="url" title="金刚狼3：殊死一战">
+            <i class="before">2017</i><i class="after">8.3分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23340.jpg" alt="金刚狼3：殊死一战">
             <span>金刚狼3：殊死一战</span>
           </a></li>
-          <li ><a @click="url" title="了不起的菲丽西">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23341.jpg" alt="了不起的菲丽西">
-            <span>了不起的菲丽西</span>
+          <li ><a @click="url" title="金刚：骷髅岛">
+            <i class="before">2017</i><i class="after">:6.8分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23317.jpg" alt="金刚：骷髅岛">
+            <span>金刚：骷髅岛</span>
           </a></li>
           <li ><a @click="url" title="怒">
+            <i class="before">2017</i><i class="after">8分</i>
             <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
             <span>怒</span>
           </a></li>
-          <li ><a @click="url" title="决战食神">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23314.jpg" alt="决战食神">
-            <span>决战食神</span>
+          <li ><a @click="url" title="星球大战外传：侠盗一号">
+            <i class="before">2017</i><i class="after">7.3分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23234.jpg" alt="星球大战外传：侠盗一号">
+            <span>星球大战外传：侠盗一号</span>
           </a></li>
-          <li ><a @click="url" title="爱乐之城">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
-            <span>八月</span>
+          <li ><a @click="url" title="降临">
+            <i class="before">2017</i><i class="after">7.8分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23001.jpg" alt="降临">
+            <span>降临</span>
           </a></li>
-          <li ><a @click="url" title="功夫瑜伽">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
-            <span>西游伏妖篇</span>
+          <li ><a @click="url" title="攻壳机动队">
+            <i class="before">2017</i><i class="after">6.6分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-5/23425.jpg" alt="攻壳机动队">
+            <span>攻壳机动队</span>
           </a></li>
         </ul>
         <ul class="ul-list clearflex" v-show="a.b">
@@ -532,53 +553,65 @@
       <hr>
       <div class="movies-list">
         <ul class="ul-list clearflex" v-show="b.a">
-          <li ><a @click="url" title="极限特工3：终极回归">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23057.jpg" alt="极限特工3：终极回归">
-            <span>极限特工3：终极回归</span>
+          <li ><a @click="url" title="凡尔赛 第二季">
+            <i class="before">2017</i><i class="after">9.6分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23306.jpg" alt="极凡尔赛 第二季">
+            <span>凡尔赛 第二季</span>
           </a></li>
-          <li ><a @click="url" title="功夫瑜伽">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23060.jpg" alt="功夫瑜伽">
-            <span>功夫瑜伽</span>
+          <li ><a @click="url" title="硅谷 第四季">
+            <i class="before">2017</i><i class="after">9.5分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23401.jpg" alt="硅谷 第四季">
+            <span>硅谷 第四季</span>
           </a></li>
-          <li ><a @click="url"  title="帕特森">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23261.jpg" alt="帕特森">
-            <span>帕特森</span>
+          <li ><a @click="url"  title="越狱 第五季">
+            <i class="before">2017</i><i class="after">9.5分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23300.jpg" alt="越狱 第五季">
+            <span>越狱 第五季</span>
           </a></li>
-          <li ><a @click="url" title="一条狗的使命">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23366.jpg" alt="一条狗的使命">
-            <span>一条狗的使命</span>
+          <li ><a @click="url" title="黑帆 第四季">
+               <i class="before">2017</i><i class="after">9.4分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-1/22995.jpg" alt="黑帆 第四季">
+            <span>黑帆 第四季</span>
           </a></li>
-          <li ><a @click="url" title="八月">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23391.jpg" alt="八月">
-            <span>八月</span>
+          <li ><a @click="url" title="风骚律师 第三季">
+               <i class="before">2017</i><i class="after">7.8分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23327.jpg" alt="风骚律师 第三季">
+            <span>风骚律师 第三季</span>
           </a></li>
-          <li ><a @click="url"  title="逃出绝命镇">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23389.jpg" alt="逃出绝命镇">
-            <span>逃出绝命镇</span>
+          <li ><a @click="url"  title="四重奏">
+               <i class="before">2017</i><i class="after">9.4分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-1/22957.jpg" alt="四重奏">
+            <span>四重奏</span>
           </a></li>
-          <li ><a @click="url" title="金刚狼3：殊死一战">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23340.jpg" alt="金刚狼3：殊死一战">
-            <span>金刚狼3：殊死一战</span>
+          <li ><a @click="url" title="守望尘世 第三季">
+               <i class="before">2017</i><i class="after">9.3分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23358.jpg" alt="守望尘世 第三季">
+            <span>守望尘世 第三季</span>
           </a></li>
-          <li ><a @click="url" title="了不起的菲丽西">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23341.jpg" alt="了不起的菲丽西">
-            <span>了不起的菲丽西</span>
+          <li ><a @click="url" title="傲骨之战">
+               <i class="before">2017</i><i class="after">9.3分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23092.jpg" alt="傲骨之战">
+            <span>傲骨之战</span>
           </a></li>
-          <li ><a @click="url" title="怒">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23342.jpg" alt="怒">
-            <span>怒</span>
+          <li ><a @click="url" title="冰血暴 第三季">
+               <i class="before">2017</i><i class="after">9.2分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23369.jpg" alt="冰血暴 第三季">
+            <span>冰血暴 第三季</span>
           </a></li>
-          <li ><a @click="url" title="决战食神">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23314.jpg" alt="决战食神">
-            <span>决战食神</span>
+          <li ><a @click="url" title="亿万 第二季">
+               <i class="before">2017</i><i class="after">9.1分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23087.jpg" alt="亿万 第二季">
+            <span>亿万 第二季</span>
           </a></li>
-          <li ><a @click="url" title="爱乐之城">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23058.jpg" alt="爱乐之城">
-            <span>八月</span>
+          <li ><a @click="url" title="人民的名义">
+               <i class="before">2017</i><i class="after">9.1分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-3/23273.jpg" alt="人民的名义">
+            <span>人民的名义</span>
           </a></li>
-          <li ><a @click="url" title="功夫瑜伽">
-            <img src="http://img.idyjy.com/pic/uploadimg/2017-4/23336.jpg" alt="西游伏妖篇">
-            <span>西游伏妖篇</span>
+          <li ><a @click="url" title="大群">
+               <i class="before">2017</i><i class="after">9.1分</i>
+            <img src="http://img.idyjy.com/pic/uploadimg/2017-2/23046.jpg" alt="大群">
+            <span>大群</span>
           </a></li>
         </ul>
         <ul class="ul-list clearflex" v-show="b.b">
@@ -877,8 +910,13 @@
         }
        },
       url: function (event) {
-        var n = event.path[1].getAttribute('title');
-        this.$router.push({path:"/api/info?name="+n});
+        var n = event.path[1].getAttribute('title') || event.target.getAttribute('title');
+        console.log(n);
+        if( n.length > 0){
+          this.$router.push({path:"/api/info?name="+n});
+
+        }
+
       }
     },
     created (){
@@ -937,8 +975,6 @@
 
     }
 	.movies-list {
-
-
         a {
           font-weight: 600;
           color: #333;
@@ -968,7 +1004,7 @@
           overflow: hidden;
           &:hover{
             &:before{
-              -webkit-animation: top 2s ease-in-out 0s 1 alternate forwards;
+              -webkit-animation: top 1s ease-in-out 0s 1 alternate forwards;
             }
           }
           &:before{
@@ -991,13 +1027,10 @@
         height: 195px;
         width: 100%;
         padding: 3px;
-        border: 1px solid #333;
+        border: 2px solid #c8c8cf;
         box-sizing: border-box;
-
+        box-shadow: 10px 0 2px 4px #b4b4ba;
         z-index: 1;
-        &:hover {
-          border: 1px solid red;
-        }
 
       }
 	}

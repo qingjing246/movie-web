@@ -36,6 +36,7 @@
       <ul class="movies-list clearflex">
         <li v-for="item in search">
           <router-link tag="a" :to="{ path: '/api/info', query: {id:item.id }}">
+            <i class="before">{{ item.time }}</i><i class="after">{{ item.pf }}</i>
             <img :src=item.img alt="">
             <span>{{ item.name }}</span>
           </router-link>
@@ -212,7 +213,7 @@
                 this.searchlist.push('donghua');
                 break;
               case '按更新':
-                this.searchlist.push('-1');
+                this.searchlist.push('1');
                 break;
               case '按评分':
                 this.searchlist.push('-1');
@@ -366,7 +367,11 @@
     font-size: 14px;
     vertical-align: top;
   }
-
+  .aa{
+    display: inline-block;
+    width: 1000px;
+    height: 744px;
+  }
   .pager-jump .jump-input:focus {
     border-color: rgb(33, 150, 243);
   }

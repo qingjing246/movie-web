@@ -4,7 +4,7 @@
       <ul class="clearflex">
         <li class="fl">
           <span>大分类:</span>
-          <a>全部</a><a >电影</a><a class="filter-bg">电视剧</a><a>动画</a>
+          <a>全部</a><a>电影</a><a class="filter-bg">电视剧</a><a>动画</a>
         </li>
         <li class="tc">
           <span>题材:</span>
@@ -28,6 +28,9 @@
           <a>按评分</a><a class="filter-bg">按更新</a>
         </li>
       </ul>
+    </div>
+    <div class="gif" v-if="search.length == 0 ">
+      <img src="../movies/timg.gif" alt="">
     </div>
     <div class="aa">
       <ul class="movies-list clearflex">
@@ -227,7 +230,6 @@
         }
         this.movies(this.searchlist);
         this.pagesa(this.click_api);
-
         console.log(this.searchlist);
         console.log(this.search.length);
       }
@@ -360,7 +362,6 @@
     width: 60px;
     height: 32px;
     outline: none;
-    padding:0;
     border: 1px solid #ddd;
     font-size: 14px;
     vertical-align: top;

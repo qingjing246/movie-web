@@ -11,6 +11,8 @@
           <router-link class="nav-list" tag="li" to="/api/tv" @click.native="tv()"><a href="">电视剧</a></router-link>
           <router-link class="nav-list" tag="li" to="/api/donghua" @click.native="donghua()"><a href="">动画片</a>
           </router-link>
+          <li class="nav-list" ><a href="https://www.github.com/qingjing246/movie-web">github</a>
+          </li>
         </ul>
       </div>
       <!--搜索栏-->
@@ -60,13 +62,6 @@
             this.submit(this.name);
             this.$router.push({path:"/api/search"});
             this.name = "";
-            /*if( this.searchinfo.length > 0){
-                this.name = "";
-                this.placeholder="请输入片名/导演/演员";
-            }else{
-              this.name = "";
-              this.placeholder = "片名不存在请重新输入";
-            }*/
           }
       }
 
@@ -167,8 +162,8 @@
     .form-wrapper {
       width: 370px;
       margin: 0 auto;
-      height: 40px;
-      padding: 10px 0;
+      height: 30px;
+      padding: 30px 0;
       input {
         box-sizing: border-box;
         width: 300px;

@@ -17,7 +17,7 @@ const store = new Vuex.Store({
     all: 10,
     movie_info: {},
     searchname: '',
-    searchinfo: {},
+    searchinfo: '',
     placeholder: '请输入片名/导演/演员',
     abc:''
   },
